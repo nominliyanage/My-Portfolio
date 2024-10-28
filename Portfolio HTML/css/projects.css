@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.projects-section {
+    /* max-width: 1200px; */
+    padding: 40px;
+}
+
+.projects-title h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* responsive */
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    max-width: 1200px;
+    padding: 30px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-image {
+    position: relative;
+    /* width: 50%; */
+    background-color: #333;
+}
+
+.project-image img {
+    padding: 70px 20px 50px 20px;
+    width: 100%;
+    height: auto;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.project-info {
+    padding: 20px;
+    /* width: 50%; */
+}
+
+.project-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.project-detail span {
+    font-size: 16px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.live-demo {
+    background-color: #FFD700;
+    color: black;
+}
+
+.github-link {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.github-link img {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 575px) {
+    .project-card{
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
